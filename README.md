@@ -24,36 +24,36 @@
         python .\url_active_detect.py -u urls.txt -o res.csv
         python .\url_active_detect.py -u urls.txt -ob 200,302
 ```
-### 批量检测url
+- 批量检测url
 ```
 python url_active_detect.py -u urls.txt  
 ```
 ![image](https://github.com/muyugit/UAD/assets/108386999/25d19a9d-3847-49ce-8e4c-803de4a3b61c)
 
-### 指定显示某个状态码的url
+- 指定显示某个状态码的url
 ```
 python url_active_detect.py -u urls.txt -sc 200
 ```
 ![image](https://github.com/muyugit/UAD/assets/108386999/804e0f34-4c48-4b87-989b-a454a81f9c82)
 
-### 排除包含某个关键字
+- 排除包含某个关键字
 ```
 python url_active_detect.py -u urls.txt -ex baidu
 ```
 ![image](https://github.com/muyugit/UAD/assets/108386999/686bbd83-bca1-4f92-8969-6b9f12358326)
-### 排除一定大小的响应页面
+- 排除一定大小的响应页面
 ```
 python url_active_detect.py -u urls.txt -es 0
 ```
 ![image](https://github.com/muyugit/UAD/assets/108386999/bfb70c2e-2c88-441d-aaba-8f6ecf512528)
-### 使用浏览器打开状态码为200的url
+- 使用浏览器打开状态码为200的url
 
 ```
  python url_active_detect.py -u urls.txt -ob 200
 ```
 ![image](https://github.com/muyugit/UAD/assets/108386999/b94e152c-494c-43e5-9acd-b5aaf796c3d7)
 
-### 将结果保存到文件
+- 将结果保存到文件
 ```
 python url_active_detect.py -u urls.txt -sc 200 -o res.csv
 ```
