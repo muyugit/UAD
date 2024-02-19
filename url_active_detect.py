@@ -43,11 +43,13 @@ class uad(object):
                     print(colorama.Fore.GREEN + f"[+] {line[0]} {line[1]} {line[3]} \n")
                 else:
                     print(f"[-] {line[0]} {line[1]} {line[3]}\n")
+                self.res.append([line[0], line[1]])
             elif str(line[1]) in self.status_code:
                 print(f"[+] {line[0]} {line[1]} {line[3]}\n")
+                self.res.append([line[0], line[1]])
             if self.open_browser != None and str(line[1]) in self.open_browser:
                 webbrowser.open(line[0])
-            self.res.append([line[0],line[1]])
+                self.res.append([line[0],line[1]])
     def check_url(self):
         threads = []
         workQueue = Queue(1000)
@@ -94,7 +96,7 @@ def arguments():
 
 if __name__ == '__main__':
     log='''
-         _   _    _   _  _    
+         _   _   _   _   _    
         | | | | / \  |  _ \ 
         | | | |/ _ \ | | | |
         | |_| / ___ \| |_| |
