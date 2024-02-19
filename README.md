@@ -1,7 +1,7 @@
 # UAD
   用于快速检测Url是否存活的小工具
 ## 功能如下
-
+```
   -u URLS, --urls URLS  存有url的文件
   -sc STATUS_CODE, --status_code STATUS_CODE
                         过滤状态码
@@ -23,8 +23,11 @@
         python .\url_active_detect.py -u urls.txt -sc 200,301
         python .\url_active_detect.py -u urls.txt -o res.csv
         python .\url_active_detect.py -u urls.txt -ob 200,302
+```
 ###批量检测url
-        
+```
+python url_active_detect.py -u urls.txt  
+```
 ![image](https://github.com/muyugit/UAD/assets/108386999/25d19a9d-3847-49ce-8e4c-803de4a3b61c)
 
 
