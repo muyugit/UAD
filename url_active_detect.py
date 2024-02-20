@@ -15,7 +15,7 @@ class uad(object):
         self.headers = {
             'User-Agent':  random.choice(ua)
         }
-        self.th=th
+        self.th=int(th)
         self.filename= filename
         self.savename=savename
         self.status_code=status_code
