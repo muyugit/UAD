@@ -52,7 +52,7 @@ class uad(object):
                 self.res.append([line[0],line[1]])
     def check_url(self):
         threads = []
-        workQueue = Queue(1000)
+        workQueue = Queue(0)
         with open(self.filename ,"r",encoding="utf-8") as f:
             for line in f:
                 workQueue.put(line.strip())
